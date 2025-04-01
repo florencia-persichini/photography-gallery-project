@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #2928fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/images/photography-work-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 250px 0 470px 0;
+}
+
+.sans-serif-font {
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
+}
+
+.serif-font {
+  font-family: "Ogg Roman", "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: italic;
+  color: black;
+  margin-bottom: 90px;
+}
+
+.primary-buttons {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  border-radius: 4px;
+  padding: 20px 45px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.introduction-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+  margin: 100px auto;
+  padding: 0 150px;
+}
+
+.selfportrait-picture img {
+  border-radius: 10px;
+}
+
+.card-text p {
+  margin-top: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 44px;
+}
+
+@media (max-width: 1000px) {
+  .introduction-card {
+    grid-template-columns: 1fr;
+  }
+}
