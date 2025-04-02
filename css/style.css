@@ -1,9 +1,10 @@
 :root {
   --primary-color: #2928fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --secondary-color: #f8f8f8;
+  --box-shadow: 0 5px 10px rgba(160, 159, 159, 0.3);
 }
 
-.hero-section {
+header {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/images/photography-work-background-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,27 +42,28 @@ h2 {
   box-shadow: var(--box-shadow);
   color: white;
   border-radius: 4px;
-  padding: 20px 45px;
+  padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 400;
 }
 
-.introduction-card {
+main {
+  margin: 0 150px;
+}
+
+.why-photography {
+  background-color: white;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
   align-items: center;
-  gap: 40px;
-  margin: 100px auto;
-  padding: 0 250px;
+  padding: 175px 145px;
 }
 
-.selfportrait-picture img {
+.why-photography-picture img {
   border-radius: 10px;
-}
-
-.card-text p {
-  margin-top: 25px;
+  width: 100%;
 }
 
 h4 {
@@ -70,11 +72,66 @@ h4 {
 
 h3 {
   font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 1000px) {
-  .introduction-card {
+p {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.why-photography-text p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.my-favourite-places {
+  background-color: white;
+}
+
+.my-favourite-places h3,
+.maps-grid {
+  margin-bottom: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.places {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.places iframe {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.places-text {
+  padding: 30px;
+}
+
+.places-text h3,
+p {
+  margin-bottom: 10px;
+}
+
+span {
+  font-style: italic;
+}
+
+@media (max-width: 1080px) {
+  .why-photography {
     grid-template-columns: 1fr;
-    padding: 0 60px;
+    padding: 0;
   }
 }
