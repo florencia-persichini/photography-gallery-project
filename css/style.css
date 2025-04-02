@@ -101,10 +101,6 @@ strong {
   padding: 100px 295px;
 }
 
-.travel-galleries h3 {
-  margin-bottom: 40px;
-}
-
 .maps-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -137,13 +133,18 @@ span {
   font-style: italic;
 }
 
+.inspiration {
+  padding: 100px 295px;
+}
+
 @media (max-width: 1080px) {
   .grid {
     grid-template-columns: 1fr;
   }
 
   .why-photography,
-  .travel-galleries {
+  .travel-galleries,
+  .inspiration {
     padding: 60px;
   }
 }
