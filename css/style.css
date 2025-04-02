@@ -61,9 +61,10 @@ h2 {
 }
 
 .why-photography {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 175px 295px;
+  align-items: center;
+  padding: 152px 255px;
 }
 
 .why-photography-picture img {
@@ -135,6 +136,20 @@ span {
 
 .inspiration {
   padding: 100px 295px;
+}
+
+footer {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 3px;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (max-width: 1080px) {
