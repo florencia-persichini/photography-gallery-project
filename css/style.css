@@ -1,6 +1,6 @@
 :root {
   --primary-color: #2928fe;
-  --secondary-color: #f8f8f8;
+  --secondary-color: #007aff;
   --box-shadow: 0 5px 10px rgba(160, 159, 159, 0.3);
 }
 
@@ -34,7 +34,14 @@ h2 {
   font-size: 24px;
   font-style: italic;
   color: black;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
+}
+
+.line-1 {
+  margin: 0 auto 45px auto;
+  width: 3px;
+  height: 54px;
+  background-color: black;
 }
 
 .primary-buttons {
@@ -48,17 +55,15 @@ h2 {
   font-weight: 400;
 }
 
-main {
-  margin: 0 150px;
+.grid {
+  display: grid;
+  gap: 50px;
 }
 
 .why-photography {
-  background-color: white;
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
   align-items: center;
-  padding: 175px 145px;
+  padding: 175px 295px;
 }
 
 .why-photography-picture img {
@@ -91,24 +96,22 @@ strong {
   font-weight: 200;
 }
 
-.my-favourite-places {
-  background-color: white;
+.travel-galleries {
+  background-color: var(--secondary-color);
+  padding: 100px 295px;
 }
 
-.my-favourite-places h3,
+.travel-galleries h3 {
+  margin-bottom: 40px;
+}
+
 .maps-grid {
-  margin-bottom: 100px;
-}
-
-.grid {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
 }
 
 .places {
+  background-color: white;
   border-radius: 10px;
-  box-shadow: var(--box-shadow);
 }
 
 .places iframe {
@@ -120,9 +123,14 @@ strong {
   padding: 30px;
 }
 
-.places-text h3,
-p {
-  margin-bottom: 10px;
+.places-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.places-footer {
+  padding: 0 0 50px 30px;
+  margin: 0;
 }
 
 span {
@@ -130,8 +138,12 @@ span {
 }
 
 @media (max-width: 1080px) {
-  .why-photography {
+  .grid {
     grid-template-columns: 1fr;
-    padding: 0;
+  }
+
+  .why-photography,
+  .travel-galleries {
+    padding: 60px;
   }
 }
