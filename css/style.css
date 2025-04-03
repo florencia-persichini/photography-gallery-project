@@ -63,7 +63,7 @@ h2 {
 .why-photography {
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 152px 255px;
+  padding: 250px 255px;
 }
 
 .why-photography-picture img {
@@ -155,6 +155,10 @@ footer a {
   margin-top: 170px;
 }
 
+.country {
+  padding: 30px 130px;
+}
+
 .country-grid {
   padding: 0 200px;
 }
@@ -192,6 +196,10 @@ footer a {
   .travel-galleries,
   .inspiration {
     padding: 60px;
+  }
+
+  .country {
+    padding: 60px 10px;
   }
 
   .country-grid {
